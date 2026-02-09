@@ -185,7 +185,7 @@
               <li>✓ No registration required</li>
               <li>✓ Open source code</li>
             </ul>
-            <a href="#download" class="download-btn">Download Free</a>
+            <a href="https://github.com/TechWithMonda/LinuxLeapEXE" class="download-btn">Download Free</a>
           </div>
 
           <div class="support-card">
@@ -243,7 +243,7 @@
       <div class="container">
         <h2>Ready to Make the Switch?</h2>
         <p>Join thousands who've already escaped Windows. Download LinuxLeap and start your journey to freedom today.</p>
-        <a href="#" class="btn-primary" @click.prevent="onDownload">
+        <a href="https://github.com/TechWithMonda/LinuxLeapEXE" class="btn-primary" target="_blank" rel=""noopener noreferrer>
           Download LinuxLeap - Free Forever
           <span>→</span>
         </a>
@@ -324,55 +324,53 @@ export default {
     if (this.observer) this.observer.disconnect();
   },
   methods: {
-    onDownload() {
-      alert('Download would start here! Connect this to your actual download link.');
-    },
-    onScroll() {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      if (!this.nav) this.nav = this.$refs.nav;
-      if (this.nav) {
-        if (currentScroll > 100) {
-          this.nav.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)';
-        } else {
-          this.nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
-        }
+  onScroll() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (!this.nav) this.nav = this.$refs.nav;
+    if (this.nav) {
+      if (currentScroll > 100) {
+        this.nav.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)';
+      } else {
+        this.nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
       }
-    },
-    setupAnchorScroll() {
-      this.anchorHandler = (e) => {
-        const href = e.currentTarget.getAttribute('href');
-        if (!href || !href.startsWith('#')) return;
-        if (href === '#') return;
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if (this.mobileOpen) this.mobileOpen = false;
-      };
-      this.anchors = Array.from(document.querySelectorAll('a[href^="#"]'));
-      this.anchors.forEach(a => a.addEventListener('click', this.anchorHandler));
-    },
-    setupObserver() {
-      const options = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-      this.observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }
-        });
-      }, options);
-
-      document.querySelectorAll('.feature-card').forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        this.observer.observe(card);
-      });
-    },
-    toggleMobileMenu() {
-      this.mobileOpen = !this.mobileOpen;
     }
+  },
+  setupAnchorScroll() {
+    this.anchorHandler = (e) => {
+      const href = e.currentTarget.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+      if (href === '#') return;
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (this.mobileOpen) this.mobileOpen = false;
+    };
+    this.anchors = Array.from(document.querySelectorAll('a[href^="#"]'));
+    this.anchors.forEach(a => a.addEventListener('click', this.anchorHandler));
+  },
+  setupObserver() {
+    const options = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, options);
+
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      this.observer.observe(card);
+    });
+  },
+  toggleMobileMenu() {
+    this.mobileOpen = !this.mobileOpen;
   }
+}
+
 }
 </script>
 
