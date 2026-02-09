@@ -185,7 +185,7 @@
               <li>✓ No registration required</li>
               <li>✓ Open source code</li>
             </ul>
-            <a href="#download" class="pricing-btn">Download Free</a>
+            <a href="#download" class="download-btn">Download Free</a>
           </div>
 
           <div class="support-card">
@@ -242,9 +242,9 @@
     <section id="download" class="cta-section">
       <div class="container">
         <h2>Ready to Make the Switch?</h2>
-        <p>Join thousands of users who've already escaped Windows. No signups required.</p>
+        <p>Join thousands who've already escaped Windows. Download LinuxLeap and start your journey to freedom today.</p>
         <a href="#" class="btn-primary" @click.prevent="onDownload">
-          Download LinuxLeap Now
+          Download LinuxLeap - Free Forever
           <span>→</span>
         </a>
         <div class="download-note">
@@ -342,11 +342,10 @@ export default {
       this.anchorHandler = (e) => {
         const href = e.currentTarget.getAttribute('href');
         if (!href || !href.startsWith('#')) return;
-        if (href === '#') return; // ignore plain '#'
+        if (href === '#') return;
         e.preventDefault();
         const target = document.querySelector(href);
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // close mobile menu after clicking a link
         if (this.mobileOpen) this.mobileOpen = false;
       };
       this.anchors = Array.from(document.querySelectorAll('a[href^="#"]'));
@@ -369,8 +368,7 @@ export default {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         this.observer.observe(card);
       });
-    }
-    ,
+    },
     toggleMobileMenu() {
       this.mobileOpen = !this.mobileOpen;
     }
