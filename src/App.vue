@@ -10,9 +10,9 @@
         <ul :class="['nav-links', { 'mobile-open': mobileOpen }]">
           <li><a href="#features">Features</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#support">Support Us</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#download" class="cta-btn">Download Now</a></li>
+          <li><a href="#download" class="cta-btn">Download Free</a></li>
         </ul>
         <button class="mobile-menu-btn" @click="toggleMobileMenu">☰</button>
       </div>
@@ -27,19 +27,19 @@
             <span class="highlight">Without Fear.</span>
           </h1>
           <p>
-            LinuxLeap makes switching from Windows to Linux easy, safe, and worry-free.
-            <strong>Keep your files.</strong> Follow the guide. Enjoy Linux.
+            LinuxLeap is a <strong>100% free tool</strong> that makes switching from Windows to Linux 
+            easy, safe, and worry-free. Keep your files. Follow the guide. Enjoy Linux.
           </p>
           <div class="hero-cta">
             <a href="#download" class="btn-primary">
-              Download Now
+              Download Free - No Signup
               <span>→</span>
             </a>
           </div>
           <div class="trust-badges">
             <div class="trust-badge">
               <div class="icon">✓</div>
-              <span>No Linux experience needed</span>
+              <span>100% Free Forever</span>
             </div>
             <div class="trust-badge">
               <div class="icon">✓</div>
@@ -47,13 +47,12 @@
             </div>
             <div class="trust-badge">
               <div class="icon">✓</div>
-              <span>100% free to try</span>
+              <span>Open Source</span>
             </div>
           </div>
         </div>
         <div class="hero-image">
           <div class="penguin-container">
-            <!-- SVG omitted for brevity in diff; full SVG preserved -->
             <svg class="penguin-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -97,7 +96,7 @@
       <div class="container">
         <div class="section-header">
           <h2>Everything You Need to Switch</h2>
-          <p>LinuxLeap handles the entire migration process from start to finish</p>
+          <p>LinuxLeap handles the entire migration process from start to finish - completely free</p>
         </div>
         <div class="features-grid">
           <div class="feature-card">
@@ -106,19 +105,19 @@
             <p>Securely save your documents, desktop, and everything important before making the switch.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📝</div>
-            <h3>Guided Installation</h3>
-            <p>Easy step-by-step guide tailored to your hardware and needs. No confusion, just clarity.</p>
+            <div class="feature-icon">🎯</div>
+            <h3>Smart Recommendations</h3>
+            <p>Take a quick quiz and get the perfect Linux distribution matched to your needs and hardware.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💿</div>
+            <h3>USB Creation Guide</h3>
+            <p>Step-by-step instructions for creating your bootable installation USB drive.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📁</div>
             <h3>Restore Everything</h3>
-            <p>Easily access your bookmarks and files on your new Linux system. Nothing gets left behind.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔧</div>
-            <h3>Restore Your Files</h3>
-            <p>Find out apps and important Linux system setup to match your Windows workflow.</p>
+            <p>Easily restore your bookmarks and files on your new Linux system. Nothing gets left behind.</p>
           </div>
         </div>
       </div>
@@ -135,7 +134,7 @@
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
-              <h3>Scan & Backup</h3>
+              <h3>Backup Your Files</h3>
               <p>LinuxLeap scans your Windows PC and backs up all your important files, settings, and bookmarks. Everything is safely stored.</p>
             </div>
           </div>
@@ -150,7 +149,7 @@
             <div class="step-number">3</div>
             <div class="step-content">
               <h3>Create USB & Install</h3>
-              <p>We'll create a bootable USB drive and guide you through each installation step with clear instructions.</p>
+              <p>Follow our guide to create a bootable USB drive and install Linux with clear, step-by-step instructions.</p>
             </div>
           </div>
           <div class="step">
@@ -164,58 +163,77 @@
       </div>
     </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="pricing">
+    <!-- Support Section (replaces Pricing) -->
+    <section id="support" class="support-section">
       <div class="container">
         <div class="section-header">
-          <h2>Choose Your Plan</h2>
-          <p>Start free, upgrade when you need more</p>
+          <h2>LinuxLeap is Free Forever</h2>
+          <p>No hidden costs. No premium tiers. Just a free tool to help you switch to Linux.</p>
         </div>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <h3>Free</h3>
-            <p>Perfect for trying out Linux</p>
-            <div class="price">$0</div>
-            <ul class="pricing-features">
-              <li>System scanner</li>
-              <li>Basic backup (10GB)</li>
-              <li>Distro recommender</li>
-              <li>Installation guide</li>
-              <li>Community support</li>
+
+        <div class="support-content">
+          <div class="free-features-card">
+            <div class="badge">100% FREE</div>
+            <h3>What You Get</h3>
+            <ul class="feature-list">
+              <li>✓ Automatic file backup</li>
+              <li>✓ Smart Linux recommendations</li>
+              <li>✓ Step-by-step installation guide</li>
+              <li>✓ Bookmark backup</li>
+              <li>✓ File restoration tools</li>
+              <li>✓ Lifetime access</li>
+              <li>✓ No registration required</li>
+              <li>✓ Open source code</li>
             </ul>
-            <a href="#download" class="pricing-btn">Download Free</a>
+            <a href="#download" class="download-btn">Download Free</a>
           </div>
 
-          <div class="pricing-card featured">
-            <div class="pricing-badge">MOST POPULAR</div>
-            <h3>Premium</h3>
-            <p>Everything you need</p>
-            <div class="price">$10 <span>one-time</span></div>
-            <ul class="pricing-features">
-              <li>Everything in Free</li>
-              <li>Unlimited backup</li>
-              <li>Bootable USB creator</li>
-              <li>Browser migration</li>
-              <li>Priority support</li>
-              <li>Lifetime updates</li>
-            </ul>
-            <a href="#download" class="pricing-btn">Get Premium</a>
-          </div>
+          <div class="support-card">
+            <div class="support-icon">☕</div>
+            <h3>Love LinuxLeap?</h3>
+            <p class="support-text">
+              LinuxLeap is built with love and maintained for free. If it helped you make the 
+              switch to Linux, consider buying me a coffee to keep development going!
+            </p>
+            
+            <div class="support-options">
+              <a href="https://www.paypal.com/paypalme/nerishmelissa3" 
+                 target="_blank" 
+                 class="support-btn paypal">
+                <span class="btn-icon">💙</span>
+                Support via PayPal
+              </a>
+              
+              <div class="paypal-email">
+                <small>Or send directly to:</small>
+                <code>nerishmelissa3@gmail.com</code>
+              </div>
+            </div>
 
-          <div class="pricing-card">
-            <h3>Enterprise</h3>
-            <p>For teams & businesses</p>
-            <div class="price">$99 <span>/year</span></div>
-            <ul class="pricing-features">
-              <li>Everything in Premium</li>
-              <li>10+ PC licenses</li>
-              <li>Bulk deployment</li>
-              <li>Custom configurations</li>
-              <li>Direct support</li>
-              <li>SLA guarantee</li>
-            </ul>
-            <a href="#contact" class="pricing-btn">Contact Sales</a>
+            <div class="support-benefits">
+              <p><strong>Your support helps:</strong></p>
+              <ul>
+                <li>🚀 Keep LinuxLeap free forever</li>
+                <li>✨ Add new features and improvements</li>
+                <li>🐛 Fix bugs and maintain code</li>
+                <li>📚 Create tutorials and documentation</li>
+                <li>💻 Pay for hosting and domain costs</li>
+              </ul>
+            </div>
+
+            <p class="support-note">
+              <em>Every contribution, big or small, makes a difference. Thank you! 🙏</em>
+            </p>
           </div>
+        </div>
+
+        <div class="transparency-section">
+          <h3>Why Not Charge for LinuxLeap?</h3>
+          <p>
+            Linux is about freedom. It wouldn't feel right to charge people for a tool that 
+            helps them switch to a free operating system. Instead, LinuxLeap is 100% free, 
+            and those who find value in it can choose to support development voluntarily.
+          </p>
         </div>
       </div>
     </section>
@@ -224,11 +242,14 @@
     <section id="download" class="cta-section">
       <div class="container">
         <h2>Ready to Make the Switch?</h2>
-        <p>Join thousands of users who've already escaped Windows. No signups required.</p>
+        <p>Join thousands who've already escaped Windows. Download LinuxLeap and start your journey to freedom today.</p>
         <a href="#" class="btn-primary" @click.prevent="onDownload">
-          Download LinuxLeap Now
+          Download LinuxLeap - Free Forever
           <span>→</span>
         </a>
+        <div class="download-note">
+          <p>✓ No signup required  •  ✓ Works on Windows 7+  •  ✓ ~20MB download</p>
+        </div>
       </div>
     </section>
 
@@ -237,14 +258,15 @@
       <div class="container">
         <div class="footer-about">
           <h3>LinuxLeap</h3>
-          <p>Making the switch to Linux easy, safe, and worry-free. Your journey to freedom starts here.</p>
+          <p>A free, open-source tool making the switch to Linux easy, safe, and worry-free. 
+             Your journey to freedom starts here.</p>
         </div>
         <div class="footer-links">
           <h4>Product</h4>
           <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#support">Support Us</a></li>
             <li><a href="#download">Download</a></li>
           </ul>
         </div>
@@ -253,22 +275,22 @@
           <ul>
             <li><a href="#">Documentation</a></li>
             <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#">GitHub</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Company</h4>
+          <h4>Support</h4>
           <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="#support">Donate</a></li>
+            <li><a href="https://www.paypal.com/paypalme/nerishmelissa3" target="_blank">PayPal</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 LinuxLeap. All rights reserved.</p>
+        <p>© 2025 LinuxLeap. Free & Open Source. Made with ❤️ for the Linux community.</p>
       </div>
     </footer>
   </div>
@@ -320,11 +342,10 @@ export default {
       this.anchorHandler = (e) => {
         const href = e.currentTarget.getAttribute('href');
         if (!href || !href.startsWith('#')) return;
-        if (href === '#') return; // ignore plain '#'
+        if (href === '#') return;
         e.preventDefault();
         const target = document.querySelector(href);
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // close mobile menu after clicking a link
         if (this.mobileOpen) this.mobileOpen = false;
       };
       this.anchors = Array.from(document.querySelectorAll('a[href^="#"]'));
@@ -347,8 +368,7 @@ export default {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         this.observer.observe(card);
       });
-    }
-    ,
+    },
     toggleMobileMenu() {
       this.mobileOpen = !this.mobileOpen;
     }
@@ -357,16 +377,16 @@ export default {
 </script>
 
 <style>
-/* Copied page styles from provided HTML (global) */
+/* Base styles from original */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-:root { --primary-green: #3fb582; --dark-green: #2d9168; --light-green: #7dd3ae; --accent-blue: #4a9fde; --dark-blue: #1e3a5f; --light-blue: #e8f5f9; --text-dark: #1a2332; --text-gray: #5a6c7d; --bg-light: #f8feff; --white: #ffffff; }
+:root { --primary-green: #3fb582; --dark-green: #2d9168; --light-green: #7dd3ae; --accent-blue: #4a9fde; --dark-blue: #1e3a5f; --light-blue: #e8f5f9; --text-dark: #1a2332; --text-gray: #5a6c7d; --bg-light: #f8feff; --white: #ffffff; --paypal-blue: #0070ba; }
 body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text-dark); background: var(--bg-light); line-height: 1.6; }
 nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 1.2rem 2rem; box-shadow: 0 2px 20px rgba(0,0,0,0.05); animation: slideDown 0.6s ease-out; }
 @keyframes slideDown { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 nav .container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 .logo { display: flex; align-items: center; gap: 0.8rem; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--text-dark); text-decoration: none; transition: transform 0.3s ease; }
 .logo:hover { transform: scale(1.05); }
-.logo-icon { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-green), var(--accent-blue)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+.logo-img { width: 40px; height: 40px; object-fit: contain; border-radius: 8px; }
 .logo-text span { color: var(--primary-green); }
 .nav-links { display: flex; gap: 2.5rem; align-items: center; list-style: none; }
 .nav-links a { color: var(--text-dark); text-decoration: none; font-weight: 500; transition: color 0.3s ease; position: relative; }
@@ -396,7 +416,6 @@ nav .container { max-width: 1200px; margin: 0 auto; display: flex; justify-conte
 .penguin-container { position: relative; width: 100%; max-width: 500px; margin: 0 auto; animation: bounce 3s ease-in-out infinite; }
 @keyframes bounce { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-20px);} }
 .penguin-svg { width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15)); }
-.wave-decoration { position: absolute; bottom: -50px; left: -100px; width: 150%; opacity: 0.8; z-index: 0; }
 .features { padding: 6rem 2rem; background: white; }
 .features .container { max-width: 1200px; margin: 0 auto; }
 .section-header { text-align: center; margin-bottom: 4rem; }
@@ -420,25 +439,39 @@ nav .container { max-width: 1200px; margin: 0 auto; display: flex; justify-conte
 .step-content { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
 .step-content h3 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-dark); }
 .step-content p { color: var(--text-gray); line-height: 1.8; }
-.pricing { padding: 6rem 2rem; background: white; }
-.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
-.pricing-card { background: var(--bg-light); border-radius: 20px; padding: 3rem 2.5rem; position: relative; transition: all 0.3s ease; border: 2px solid transparent; }
-.pricing-card.featured { background: linear-gradient(135deg, var(--primary-green), var(--accent-blue)); color: white; transform: scale(1.05); box-shadow: 0 20px 50px rgba(63,181,130,0.3); }
-.pricing-card.featured .pricing-badge { background: rgba(255,255,255,0.2); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 1rem; }
-.pricing-card:hover:not(.featured) { transform: translateY(-10px); border-color: var(--primary-green); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-.pricing-card h3 { font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
-.pricing-card.featured h3, .pricing-card.featured p, .pricing-card.featured li { color: white; }
-.price { font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 800; margin: 1.5rem 0; }
-.price span { font-size: 1.2rem; font-weight: 500; }
-.pricing-features { list-style: none; margin: 2rem 0; }
-.pricing-features li { padding: 0.8rem 0; display: flex; align-items: center; gap: 0.8rem; color: var(--text-gray); }
-.pricing-card.featured .pricing-features li { color: rgba(255,255,255,0.95); }
-.pricing-features li::before { content: '✓'; width: 24px; height: 24px; background: var(--primary-green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; }
-.pricing-card.featured .pricing-features li::before { background: white; color: var(--primary-green); }
-.pricing-btn { width: 100%; padding: 1rem; border-radius: 50px; text-align: center; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: block; transition: all 0.3s ease; margin-top: 2rem; }
-.pricing-card:not(.featured) .pricing-btn { background: var(--primary-green); color: white; }
-.pricing-card.featured .pricing-btn { background: white; color: var(--primary-green); }
-.pricing-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+
+/* Support Section (replaces Pricing) */
+.support-section { padding: 6rem 2rem; background: white; }
+.support-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; margin-bottom: 4rem; }
+.free-features-card { background: linear-gradient(135deg, #f8feff 0%, #e8f9f3 100%); padding: 3rem; border-radius: 20px; border: 2px solid var(--primary-green); }
+.badge { background: var(--primary-green); color: white; display: inline-block; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1.5rem; font-size: 0.9rem; }
+.free-features-card h3 { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-dark); }
+.feature-list { list-style: none; margin: 2rem 0; }
+.feature-list li { padding: 0.8rem 0; font-size: 1.1rem; color: var(--text-dark); }
+.download-btn { display: block; width: 100%; padding: 1.2rem; background: var(--primary-green); color: white; text-align: center; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; margin-top: 2rem; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(63,181,130,0.3); }
+.download-btn:hover { background: var(--dark-green); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(63,181,130,0.4); }
+
+.support-card { background: var(--bg-light); padding: 3rem; border-radius: 20px; border: 2px solid #e0e0e0; }
+.support-icon { width: 80px; height: 80px; background: linear-gradient(135deg, #ff6b6b, #ffd93d); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin-bottom: 1.5rem; box-shadow: 0 10px 25px rgba(255,107,107,0.3); }
+.support-card h3 { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-dark); }
+.support-text { font-size: 1.1rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem; }
+.support-options { margin: 2rem 0; }
+.support-btn { display: block; width: 100%; padding: 1.2rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; text-align: center; transition: all 0.3s ease; margin-bottom: 1rem; }
+.support-btn.paypal { background: var(--paypal-blue); color: white; box-shadow: 0 8px 25px rgba(0,112,186,0.3); display: flex; align-items: center; justify-content: center; gap: 0.8rem; }
+.support-btn.paypal:hover { background: #005ea6; transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,112,186,0.4); }
+.btn-icon { font-size: 1.3rem; }
+.paypal-email { text-align: center; padding: 1.5rem; background: white; border-radius: 15px; margin-top: 1.5rem; }
+.paypal-email small { display: block; color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.9rem; }
+.paypal-email code { background: #f5f5f5; padding: 0.6rem 1.2rem; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.95rem; color: var(--text-dark); display: inline-block; }
+.support-benefits { margin: 2rem 0; padding: 1.5rem; background: white; border-radius: 15px; }
+.support-benefits p { font-weight: 600; margin-bottom: 1rem; color: var(--text-dark); }
+.support-benefits ul { list-style: none; }
+.support-benefits li { padding: 0.5rem 0; color: var(--text-gray); font-size: 0.95rem; }
+.support-note { text-align: center; margin-top: 2rem; color: var(--text-gray); font-size: 0.95rem; }
+.transparency-section { max-width: 800px; margin: 0 auto; text-align: center; padding: 3rem; background: linear-gradient(135deg, #f8feff 0%, #e8f9f3 100%); border-radius: 20px; }
+.transparency-section h3 { font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-dark); }
+.transparency-section p { font-size: 1.1rem; color: var(--text-gray); line-height: 1.8; }
+
 .cta-section { padding: 6rem 2rem; background: linear-gradient(135deg, var(--primary-green), var(--accent-blue)); color: white; text-align: center; position: relative; overflow: hidden; }
 .cta-section::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); animation: rotate 30s linear infinite; }
 @keyframes rotate { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
@@ -447,6 +480,8 @@ nav .container { max-width: 1200px; margin: 0 auto; display: flex; justify-conte
 .cta-section p { font-size: 1.3rem; margin-bottom: 2.5rem; opacity: 0.95; }
 .cta-section .btn-primary { background: white; color: var(--primary-green); font-size: 1.2rem; padding: 1.2rem 3rem; }
 .cta-section .btn-primary:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+.download-note { margin-top: 1.5rem; opacity: 0.9; font-size: 0.95rem; }
+
 footer { background: var(--text-dark); color: white; padding: 3rem 2rem 1.5rem; }
 footer .container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2rem; }
 .footer-about h3 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; margin-bottom: 1rem; }
@@ -458,10 +493,27 @@ footer .container { max-width: 1200px; margin: 0 auto; display: grid; grid-templ
 .footer-links a:hover { color: var(--primary-green); }
 .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); }
 .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-dark); }
-@media (max-width: 968px) { .hero .container { grid-template-columns: 1fr; gap: 3rem; } .hero h1 { font-size: 2.5rem; } .penguin-container { max-width: 350px; } .features-grid { grid-template-columns: 1fr; } .pricing-grid { grid-template-columns: 1fr; } .pricing-card.featured { transform: scale(1); } footer .container { grid-template-columns: 1fr; gap: 2rem; } }
-@media (max-width: 768px) { .nav-links { display: none; } .mobile-menu-btn { display: block; } .hero { padding: 3rem 1.5rem; } .hero h1 { font-size: 2rem; } .hero p { font-size: 1.1rem; } .section-header h2 { font-size: 2rem; } .cta-section h2 { font-size: 2rem; } .trust-badges { flex-direction: column; align-items: flex-start; gap: 1rem; } }
 
-/* Mobile open state for nav */
+@media (max-width: 968px) { 
+  .hero .container { grid-template-columns: 1fr; gap: 3rem; } 
+  .hero h1 { font-size: 2.5rem; } 
+  .penguin-container { max-width: 350px; } 
+  .features-grid { grid-template-columns: 1fr; } 
+  .support-content { grid-template-columns: 1fr; }
+  footer .container { grid-template-columns: 1fr; gap: 2rem; } 
+}
+
+@media (max-width: 768px) { 
+  .nav-links { display: none; } 
+  .mobile-menu-btn { display: block; } 
+  .hero { padding: 3rem 1.5rem; } 
+  .hero h1 { font-size: 2rem; } 
+  .hero p { font-size: 1.1rem; } 
+  .section-header h2 { font-size: 2rem; } 
+  .cta-section h2 { font-size: 2rem; } 
+  .trust-badges { flex-direction: column; align-items: flex-start; gap: 1rem; } 
+}
+
 .nav-links.mobile-open {
   display: flex !important;
   flex-direction: column;
@@ -474,5 +526,4 @@ footer .container { max-width: 1200px; margin: 0 auto; display: grid; grid-templ
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
   z-index: 1100;
 }
-.logo-img { width: 40px; height: 40px; object-fit: contain; border-radius: 8px; }
 </style>
