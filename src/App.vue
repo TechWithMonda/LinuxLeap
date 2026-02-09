@@ -524,4 +524,8 @@ footer .container { max-width: 1200px; margin: 0 auto; display: grid; grid-templ
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
   z-index: 1100;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> fc26967badb9eaebe2cfc536bf1e8d76cc1d5f00
