@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './assets/main.css'
+import { inject } from '@vercel/analytics' // 1. Import the function
 
+const app = createApp(App)
 
-createApp(App).mount('#app')
+// 2. Initialize Vercel Analytics
+inject() 
+
+app.mount('#app')
