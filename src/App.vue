@@ -595,16 +595,16 @@
         <h2>Ready to Make the Switch?</h2>
         <p>Join 10,000+ people who've already escaped Windows. Download LinuxLeap and start your journey to freedom today.</p>
         <div class="cta-buttons">
-          <a href="https://drive.google.com/file/d/1XRCf-jBzytcG7SxxlWwWssr_kwicKKbj/view?usp=sharing"
+          <a href="https://drive..com/file/d/1XRCf-jBzytcG7SxxlWwWssr_kwicKKbj/view?usp=sharing"
              class="btn-primary btn-large"
              target="_blank" rel="noopener noreferrer">
             Download LinuxLeap — Free Forever
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M9 4l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="https://drive.google.com/file/d/1XRCf-jBzytcG7SxxlWwWssr_kwicKKbj/view?usp=sharing"
+          <a href="https://drive..com/file/d/1XRCf-jBzytcG7SxxlWwWssr_kwicKKbj/view?usp=sharing"
              class="btn-outline-white"
              target="_blank" rel="noopener noreferrer">
-            View on GoogleDrive
+            View on Github
           </a>
         </div>
         <div class="download-meta">
@@ -760,7 +760,7 @@ export default {
         'Lifetime access — no expiry',
         'No registration or account needed',
         'Open source — inspect the code',
-        'Community support via GoogleDrive',
+        'Community support via Github',
       ],
 
       supportBenefits: [
